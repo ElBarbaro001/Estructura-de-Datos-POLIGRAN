@@ -7,7 +7,6 @@ public class interfaz {
 		binario binraiz = new binario(8);
 		binario binizquierdo = new binario(5);
 		binario binderecho = new binario(3);
-		binario binderecho2 = new binario(3);
 
 	}
 
