@@ -6,3 +6,8 @@ Estructura
 -> Derecho
 
 Crear un nodo apartir de una lista sencilla
+
+Se crea la clase VEDArbin<E> este nodo de lista estara compuesto por:
+Valor del nodo : val
+Apuntador izquierdo: izq
+Apuntador derecho: der
