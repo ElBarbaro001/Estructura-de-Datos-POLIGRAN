@@ -11,3 +11,7 @@ Se crea la clase VEDArbin<E> este nodo de lista estara compuesto por:
 Valor del nodo : val
 Apuntador izquierdo: izq
 Apuntador derecho: der
+
+Caracteristicas
+Peso: n
+Altura: h
