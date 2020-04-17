@@ -187,5 +187,28 @@ public class VEDArbin<E>{//Figura 11 Declaracion de la clase VEDArbin<E>
         }
         return lista;      
      }
+   
+   public boolean busqueda(E valor){//Metodo que busca numero en un arbol
+       
+       if (!esVacio()) {
+
+          if (getVal()==valor) {
+              return true;
+          }
+          boolean b1=false,b2= false;
+              if(izq!=null){
+              b1 = izq.busqueda(valor);
+              }
+              if(der!=null){
+              b2 = der.busqueda(valor);
+              }
+              if(b1||b2){
+              return true;
+              }
+              
+           }
+
+          return false;
+       }
     
 }
