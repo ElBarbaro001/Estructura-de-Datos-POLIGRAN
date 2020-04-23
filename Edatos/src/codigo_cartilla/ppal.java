@@ -8,7 +8,7 @@ public class ppal {
 		VEDArbin<Integer> arbol1=new VEDArbin<Integer>(9,vacio,vacio);
 		//public VEDArbin(E pVal,VEDArbin<E> pDer, VEDArbin<E> pIzq)
 		System.out.println(arbol1.getVal());
-		VEDArbin<Integer> arbol2=new VEDArbin<Integer>(20,vacio,vacio);
+		VEDArbin<Integer> arbol2=new VEDArbin<Integer>();
 		System.out.println(arbol2.getVal());
 		VEDArbin<Integer> arbol3=new VEDArbin<Integer>(30,vacio,vacio);
 		System.out.println(arbol3.getVal());

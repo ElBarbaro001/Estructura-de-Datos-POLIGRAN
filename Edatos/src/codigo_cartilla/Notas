@@ -15,3 +15,7 @@ Apuntador derecho: der
 Caracteristicas
 Peso: n
 Altura: h
+
+
+3. Implemente un método en Java que determine si un valor está o no contenido en un
+árbol y calcule su complejidad algorítmica. 
