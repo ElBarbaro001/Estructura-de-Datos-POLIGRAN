@@ -51,4 +51,13 @@ public class VEDArrayList<E> implements VEDLista<E> {
 		arreglo[tamanho]=element;
 		tamanho ++;
 	}//fin
+	public E remove(int index) {
+		E elemento=get(index);
+		for(int i=index+1; i<tamanho; i++){
+			arreglo[i+1]=arreglo[i];
+		}
+		arreglo[tamanho-1]=null;
+		tamanho --;
+		return elemento;
+	}//fin
 }
