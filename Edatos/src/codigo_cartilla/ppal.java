@@ -4,14 +4,11 @@ public class ppal {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		VEDArbin<Integer> vacio = new VEDArbin<Integer>();
-		VEDArbin<Integer> raiz = new VEDArbin<Integer>(10,vacio,vacio);
-		VEDArbin<Integer> derecho = new VEDArbin<Integer>(10,vacio,raiz);
-		VEDArbin<Integer> izquierdo = new VEDArbin<Integer>(10,raiz,derecho);
-		
-		System.out.println(raiz.getVal());
-		System.out.println(derecho.getDer());
-		System.out.println(izquierdo.getIzq());
-		System.out.println(vacio.peso());
+		VEDArbin<Integer> Arbolnull = new VEDArbin<Integer>();//Arbol vacio
+		VEDArbin<Integer> Arbol1 = new VEDArbin<Integer>(10,Arbolnull,Arbolnull);//Raiz
+		VEDArbin<Integer> Arbol2 = new VEDArbin<Integer>(15,Arbolnull,Arbol1);//Derecho
+		VEDArbin<Integer> Arbol3 = new VEDArbin<Integer>(3,Arbol1,Arbol2);//Izquierdo
+	
+		System.out.println(Arbol2.getDer());
 	}
 }
