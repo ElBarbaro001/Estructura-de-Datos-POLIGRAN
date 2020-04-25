@@ -233,6 +233,7 @@ public class VEDArbin<E> {
         }
         return false;
     }
+	
 	public boolean SearchNode(VEDArbin<Integer> node, Integer key) {
         if (node == null)//Si existe un arbol
             return false;

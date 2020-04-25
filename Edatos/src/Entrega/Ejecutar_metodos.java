@@ -65,7 +65,8 @@ public class Ejecutar_metodos {
 		VEDArrayList<Integer> listae = new VEDArrayList<Integer>();
 		int buscar_numero=Integer.parseInt(JOptionPane.showInputDialog("Ingrese valor a buscar: "));
 		VEDArbin<Integer> buscar = new VEDArbin<Integer>();//Creamos una copia de la clase VEDArbin
-		//System.out.println(buscar.buscar_nodo(listae, buscar_numero));
+		System.out.println(buscar.Buscar(raiz, buscar_numero));
+		
 		
 		
 		
