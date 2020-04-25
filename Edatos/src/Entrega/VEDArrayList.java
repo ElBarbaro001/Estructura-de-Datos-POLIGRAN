@@ -1,4 +1,4 @@
-package codigo_tutor;
+package Entrega;
 
 public class VEDArrayList<E> implements VEDLista<E> {
 	private Object[] arreglo=new Object[1];

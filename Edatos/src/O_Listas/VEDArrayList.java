@@ -1,8 +1,8 @@
-package codigo_tutor;
+package O_Listas;
 
-public class VEDArrayList<E> implements VEDLista<E> {
+public class VEDArrayList<E> implements VEDList<E> {//Listas atraves de vectores, declaracion de la clase
 	private Object[] arreglo=new Object[1];
-	public int tamanho=0;
+	public int tamanho=20;
 	public VEDArrayList() {
 		
 	}//fin
@@ -63,4 +63,9 @@ public class VEDArrayList<E> implements VEDLista<E> {
 		tamanho --;
 		return elemento;
 	}//fin
+	public Iterator iterator() {//Recorrer los elementos de una lista con el metodo iterator
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
 }

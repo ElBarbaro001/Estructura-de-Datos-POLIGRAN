@@ -1,0 +1,22 @@
+public boolean busqueda(E valor){
+
+        if (!esVacio()) {
+
+            if (getVal()==valor) {
+                return true;
+            }
+            boolean b1=false,b2= false;
+            if(izq!=null){
+                b1 = izq.busqueda(valor);
+            }
+            if(der!=null){
+                b2 = der.busqueda(valor);
+            }
+            if(b1||b2){
+                return true;
+            }
+
+        }
+
+        return false;
+    }

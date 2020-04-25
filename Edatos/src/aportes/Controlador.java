@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Controlador {
 
     static Scanner entrada = new Scanner(System.in);
-    static ArrayList<Object> lista = new ArrayList<Object>();
+    static VEDArrayList<Object> lista = new ArrayList<Object>();
     static int raiz;
     private static int n;
 
@@ -170,10 +170,12 @@ public class Controlador {
     public static void busqueda(){
         Object x;
         int n;
-        System.out.println("Digite la raiz: ");
-        n = Controlador.entrada.nextInt();
+        System.out.println("Digite la raiz: ");//tomar dato en pantalla
+        n = Controlador.entrada.nextInt();//a n se le asigna valor
+        
         System.out.println("Digite objeto a buscar");
         x=Controlador.entrada.nextInt();
+        
         VEDArbin<Object> nuevoNodo1 = new VEDArbin();
         nuevoNodo1 = (VEDArbin<Object>) lista.get(buscarIndex(n));
         if(nuevoNodo1.busqueda(x)){

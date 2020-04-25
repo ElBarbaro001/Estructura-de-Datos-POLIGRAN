@@ -4,19 +4,19 @@ import java.util.Queue;
 public class VEDArbin<E> {
 	
 	//Crear varibles protegidas
-	protected E val;
-	protected VEDArbin<E> der;
-	protected VEDArbin<E> izq;
+	protected E val;// Se crear nodo
+	protected VEDArbin<E> der;//Se acopla arbol o nodo al lado derecho
+	protected VEDArbin<E> izq;//Se acopla arbol o nodo al lado izquierdo
 	
-	//Crear constructor
-	public VEDArbin() {
+	
+	public VEDArbin() {//Crear nodo vacio
 		val=null;
 		izq=null;
 		der=null;
 	}
 	
 	//Crear funcion analizadora
-	public VEDArbin(E pVal, VEDArbin<E> pIzq,VEDArbin<E> pDer) {
+	public VEDArbin(E pVal, VEDArbin<E> pIzq,VEDArbin<E> pDer) {//Asigna valor al nodo, y se apunta a los nodos deseados
 		if(pVal==null) {
 			throw new NullPointerException("Un arbol vacio no deberia tener raiz");
 		}
@@ -110,6 +110,7 @@ public class VEDArbin<E> {
 			der.preorden(pLista);
 		}
 	}//finpreorden
+	
 	public VEDArrayList<E> inorden()
 	{
 		VEDArrayList<E> lista=new VEDArrayList<E>();
@@ -211,4 +212,125 @@ public class VEDArbin<E> {
 			}
 		}	
 	}//fin es contenido
+	
+	public boolean busqueda(E valor){
+
+        if (!esVacio()) {
+
+            if (getVal()==valor) {
+                return true;
+            }
+            boolean b1=false,b2= false;
+            if(izq!=null){
+                b1 = izq.busqueda(valor);
+            }
+            if(der!=null){
+                b2 = der.busqueda(valor);
+            }
+            if(b1||b2){
+                return true;
+            }
+        }
+        return false;
+    }
+	public boolean SearchNode(VEDArbin<Integer> node, Integer key) {
+        if (node == null)//Si existe un arbol
+            return false;
+        if (node.val == key)
+            return true;
+        boolean b1=false,b2= false;
+        if(izq!=null){
+            b1 = izq.busqueda(valor);
+        }
+        if(der!=null){
+            b2 = der.busqueda(valor);
+        }
+        if(b1||b2){
+            return true;
+        }
+    }
+    return false;
+    }
+public boolean buscar(VEDArbin<Integer> node, Integer key) {
+        if (node == null)//Si existe un arbol
+            return false;
+        if (node.val == key)
+            return true;
+        boolean b1=false,b2= false;
+        if(izq!=null){
+            b1 = izq.buscar(val,key);
+        }
+        if(der!=null){
+            b2 = der.buscar(val,key);
+        }
+        if(b1||b2){
+            return true;
+        }
+    }
+    return false;
+    }
+    
+    public boolean buscarr(VEDArbin<Integer> node, Integer key) {
+    	boolean msge, msgen;
+    	msge=true;
+    	msgen=false;
+    	String ms1,ms2;
+    	ms1=Boolean.toString(msge);
+    	ms2=Boolean.toString(msgen);
+    	String str1="Existe " +
+        if (node == null)
+            return false;
+        if (node.val == key)
+            return true;
+        boolean res1 = SearchNode(node.izq,key);
+        if (res1)
+            return true;
+        boolean res2 = SearchNode (node.der,key);
+        return res2;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    public boolean Buscar(VEDArbin<Integer> node, Integer key) {
+        if (node == null)//Si existe un arbol
+            return false;
+        if (node.val == key)
+            return true;
+        boolean b1=false,b2= false;
+        if(izq!=null){
+            b1 = Buscar(node.izq, key);
+        }
+        if(der!=null){
+            b2 = der.Buscar(node.der, key);
+        }
+        if(b1||b2){
+            return "El numero ingresado existe en el arbol";
+        }
+    return "El numero ingresado no existe en el arbol";
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+	
+	
 }//fin clase ppal
