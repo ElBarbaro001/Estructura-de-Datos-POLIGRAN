@@ -67,9 +67,16 @@ public class arbol_ordenado {
 		}
 		
 		VEDArbinOrdenado<Integer> arbol2=new VEDArbinOrdenado<Integer>();//arbol lleno
+		arbol2.add( 19);
+		arbol2.add(24);
+		arbol2.add(32);
 		arbol2.add( 40);
-		arbol2.add(51);
-		arbol2.add(27);
+		arbol2.add(37);
+		arbol2.add(80);
+		arbol2.add(97);
+		arbol2.add(71);
+		arbol2.add(92);
+		arbol2.add(45);
 		VEDArrayList<Integer> lista2 = new VEDArrayList<Integer>();
 		lista2=arbol2.inorden();
 		System.out.println();
