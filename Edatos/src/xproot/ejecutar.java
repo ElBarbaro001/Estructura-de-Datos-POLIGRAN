@@ -1,14 +1,13 @@
-package codigo_tutor;
-import java.util.ArrayList;
-import java.util.List;
-import javax.swing.JOptionPane;
+package xproot;
 
-import pruebas.VEDArbin;
-public class Buscar_elto {
-	
+import javax.swing.JOptionPane;
+import java.util.Optional;
+
+public class ejecutar {
+	// static VEDArrayList<Object> lista = new VEDArrayList<Object>();
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
 		//Crear copia de la clase VEDArbin en la variable vacio
 				VEDArbin<Integer> vacio = new VEDArbin<Integer>();
 				
@@ -31,11 +30,46 @@ public class Buscar_elto {
 				VEDArbin<Integer> rama_izq = new VEDArbin<Integer>(6,rama_izq_izq,rama_izq_der);
 				//Raiz del Arbol
 				VEDArbin<Integer> raiz= new VEDArbin<Integer>(15,rama_izq,rama_der);
-				System.out.println(raiz.getVal());
 				
-				List<Integer> lista = new VEDArrayList<Integer>();
+				//Creamos una lista
+				VEDArrayList<Integer> lista = new VEDArrayList<Integer>();
+				lista=raiz.preorden();
+				
+				
+				System.out.println("Imprimir Arbol en Preorden");
+				System.out.println();
+				for(int i=0;i<lista.gettam();i++) {
+					System.out.print("<"+lista.get(i)+">");
+				}
+				
+				System.out.println();
 				lista=raiz.inorden();
-		
+				System.out.println("Imprimir Arbol en Inorden");
+				System.out.println();
+				for(int i=0;i<lista.gettam();i++) {
+					System.out.print("<"+lista.get(i)+">");
+				}
+				
+				System.out.println();
+				lista=raiz.postorden();
+				System.out.println("Imprimir Arbol en Postorden");
+				System.out.println();
+				for(int i=0;i<lista.gettam();i++) {
+					System.out.print("<"+lista.get(i)+">");
+				}
+				
+				System.out.println();
+				lista=raiz.niveles();
+				System.out.println("Imprimir Arbol en Niveles");
+				System.out.println();
+				for(int i=0;i<lista.gettam();i++) {
+					System.out.print("<"+lista.get(i)+">");
+				}
+				int buscar=Integer.parseInt(JOptionPane.showInputDialog("Buscar numero: "));
+				System.out.println("");
+				System.out.println(raiz.buscar(raiz,buscar));
+
+
 	}
 
 }

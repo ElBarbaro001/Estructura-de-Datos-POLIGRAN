@@ -63,4 +63,9 @@ public class VEDArrayList<E> implements VEDLista<E> {
 		tamanho --;
 		return elemento;
 	}//fin
+	public boolean contains(int buscar_numero) {
+		// TODO Auto-generated method stub
+		return (Boolean) null;
+	}
+	
 }

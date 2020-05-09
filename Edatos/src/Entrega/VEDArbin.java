@@ -2,8 +2,6 @@ package Entrega;
 import java.util.LinkedList;
 import java.util.Queue;
 
-
-
 public class VEDArbin <E>{
 	//Crear varibles protegidas
 		protected E val;// Se crear nodo
@@ -162,22 +160,22 @@ public class VEDArbin <E>{
 			}
 			return lista;		
 		}//fin vedarraylist
-		public boolean buscar_nodo(VEDArbin<Integer> lista, Integer key) {//
-	        if (lista == null)//Si el arbol es vacio
-	            return false;//Salga del metodo
-	        if (lista.val == key)
-	            return true;
-	        boolean b1=false,b2= false;
-	        if(izq!=null){
-	            b1 = izq.buscar_nodo(lista.izq, key);
-	        }
-	        if(der!=null){
-	            b2 = der.buscar_nodo(lista.der, key);
-	        }
-	        if(b1||b2){
-	            return true;
-	        }
-	    
-	    return false;
+		
+		public boolean buscar(VEDArbin<Integer> valor, Integer Key) {
+			if(valor==null)
+				return false;
+			if(valor.val == Key)
+				return true;
+			boolean sw1=false,sw2=false;
+			if(izq!=null) {
+				sw1=izq.buscar(valor.izq, Key);
+			}
+			if(der!=null) {
+				sw2=der.buscar(valor.der, Key);
+			}
+			if(sw1||sw2) {
+				return true;
+			}
+				return false;
 		}
 }

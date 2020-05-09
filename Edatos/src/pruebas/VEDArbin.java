@@ -1,9 +1,13 @@
 package pruebas;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class VEDArbin<E> {
-    protected E val;
+    
+	private Object[] arreglo=new Object[1];
+	protected E val;
     protected VEDArbin<E> izq;
     protected VEDArbin<E> der;
     
@@ -28,11 +32,20 @@ public class VEDArbin<E> {
                 if (pDer==null) {
                     throw new NullPointerException ("Un ?rbol no vacio necesita su?rbol derecho!");
         }
+                val=pVal;
+                izq=pIzq;
+                der=pDer;
     }
     
-    public E getVal() {
-        return val; //Retornar al valor de la raiz
-    }
+    public E get(int index) {//Buscar elemento dentro de una lista
+		Object elemento=arreglo [index];
+		return (E)elemento;
+	}//fin
+    
+    
+    public E getVal() {//Imprimir valor de la raiz
+		return val;
+	}//fin getval
     public VEDArbin<E> getIzq(){
         return izq;    //Retornar el sub?rbol izquierdo
     }
@@ -117,7 +130,7 @@ public class VEDArbin<E> {
             der.preorden(pLista);
         }
     }
-    public List<E> inorden(VEDArbin<E> raiz){
+    public List<E> inorden(){
         List<E> lista=new ArrayList<E>();
         inorden(lista);
         return lista;
@@ -187,8 +200,10 @@ public class VEDArbin<E> {
                 b2 = der.Buscar(node.der, key);
             }
             if(b1||b2){
+            	System.out.println("Existe!! ");
             	return true;
             }
+            System.out.println("Error!!! No existe!!!");
 		return false;
         }
 }

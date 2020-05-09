@@ -8,26 +8,9 @@ public class Ejecutar_metodos {
 		// TODO Auto-generated method stub
 		//Crear copia de la clase VEDArbin en la variable vacio
 		VEDArbin<Integer> vacio = new VEDArbin<Integer>();
-		//Rama derecha sub arbol derecha
-		VEDArbin<Integer> rama_der_der = new VEDArbin<Integer>(24,vacio,vacio);
-		//Rama derecha sub arbol izquierdo
-		VEDArbin<Integer> rama_der_izq_izq = new VEDArbin<Integer>(17,vacio,vacio);
-		VEDArbin<Integer> rama_der_izq = new VEDArbin<Integer>(18,rama_der_izq_izq,vacio);
-		//Subarbol derecho
-		VEDArbin<Integer> rama_der = new VEDArbin<Integer>(20,rama_der_izq,rama_der_der);
-		//Rama derecha sub arbol izquierdo
-		VEDArbin<Integer> rama_izq_der_der = new VEDArbin<Integer>(12,vacio,vacio);
-		VEDArbin<Integer> rama_izq_der_izq = new VEDArbin<Integer>(7,vacio,vacio);
-		VEDArbin<Integer> rama_izq_der = new VEDArbin<Integer>(9,rama_izq_der_izq,rama_izq_der_der);
-		//Rama izquierdo sub arbol izquierdo
-		VEDArbin<Integer> rama_izq_izq_der = new VEDArbin<Integer>(4,vacio,vacio);
-		VEDArbin<Integer> rama_izq_izq_izq = new VEDArbin<Integer>(1,vacio,vacio);
-		VEDArbin<Integer> rama_izq_izq = new VEDArbin<Integer>(3,rama_izq_izq_izq,rama_izq_izq_der);
-		//Subarbol izquierdo
-		VEDArbin<Integer> rama_izq = new VEDArbin<Integer>(6,rama_izq_izq,rama_izq_der);
-		//Raiz del Arbol
-		VEDArbin<Integer> raiz= new VEDArbin<Integer>(15,rama_izq,rama_der);
-       
+		
+		
+		
 		
 		//Crear copia de la clase VEDArrayList en la variable lista
 		VEDArrayList<Integer> lista = new VEDArrayList<Integer>();//Crear lista apartir de la clase VEDArrayList, se crea lista vacia

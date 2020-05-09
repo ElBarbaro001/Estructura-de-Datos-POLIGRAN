@@ -31,9 +31,7 @@ public class VEDArbin<E>{//Figura 11 Declaracion de la clase VEDArbin<E>
 	}
 	
 	 public VEDArbin(E pVal,VEDArbin<E> pDer, VEDArbin<E> pIzq) {//Metodo constructor
-		 val = pVal;
-	     der = pDer;
-	      izq = pIzq;
+		
 		 if (pVal == null) {
 	            throw new NullPointerException("Un arbol vacio debe tener raiz!");
 	        }
@@ -43,6 +41,9 @@ public class VEDArbin<E>{//Figura 11 Declaracion de la clase VEDArbin<E>
 	          if (pIzq == null) {
 	            throw new NullPointerException("Un arbol vacio debe tener sub arbol derecho!");
 	        }
+	          val = pVal;
+	 	     der = pDer;
+	 	      izq = pIzq;
 	    }
 	 
 	

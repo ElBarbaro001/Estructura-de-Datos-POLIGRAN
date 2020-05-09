@@ -1,6 +1,7 @@
 package codigo_tutor;
 import java.util.LinkedList;
 import java.util.Queue;
+
 public class VEDArbin<E> {
 	
 	//Crear varibles protegidas
@@ -234,104 +235,25 @@ public class VEDArbin<E> {
         return false;
     }
 	
-	public boolean SearchNode(VEDArbin<Integer> node, Integer key) {
-        if (node == null)//Si existe un arbol
-            return false;
-        if (node.val == key)
-            return true;
-        boolean b1=false,b2= false;
-        if(izq!=null){
-            b1 = izq.busqueda(valor);
-        }
-        if(der!=null){
-            b2 = der.busqueda(valor);
-        }
-        if(b1||b2){
-            return true;
-        }
-    }
-    return false;
-    }
-public boolean buscar(VEDArbin<Integer> node, Integer key) {
-        if (node == null)//Si existe un arbol
-            return false;
-        if (node.val == key)
-            return true;
-        boolean b1=false,b2= false;
-        if(izq!=null){
-            b1 = izq.buscar(val,key);
-        }
-        if(der!=null){
-            b2 = der.buscar(val,key);
-        }
-        if(b1||b2){
-            return true;
-        }
-    }
-    return false;
-    }
-    
-    public boolean buscarr(VEDArbin<Integer> node, Integer key) {
-    	boolean msge, msgen;
-    	msge=true;
-    	msgen=false;
-    	String ms1,ms2;
-    	ms1=Boolean.toString(msge);
-    	ms2=Boolean.toString(msgen);
-    	String str1="Existe " +
+	public boolean Buscar(VEDArbin<Integer> node, Integer key) {
+    	
         if (node == null)
             return false;
         if (node.val == key)
             return true;
-        boolean res1 = SearchNode(node.izq,key);
-        if (res1)
-            return true;
-        boolean res2 = SearchNode (node.der,key);
-        return res2;
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    public boolean Buscar(VEDArbin<Integer> node, Integer key) {
-        if (node == null)//Si existe un arbol
-            return false;
-        if (node.val == key)
-            return true;
         boolean b1=false,b2= false;
         if(izq!=null){
-            b1 = Buscar(node.izq, key);
+            b1 = izq.Buscar(node.izq, key);
         }
         if(der!=null){
             b2 = der.Buscar(node.der, key);
         }
         if(b1||b2){
-            return "El numero ingresado existe en el arbol";
+        	System.out.println("Existe!! ");
+        	return true;
         }
-    return "El numero ingresado no existe en el arbol";
+        System.out.println("Error!!! No existe!!!");
+	return false;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-	
 	
 }//fin clase ppal

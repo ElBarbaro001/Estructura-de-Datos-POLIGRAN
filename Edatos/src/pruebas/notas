@@ -1,0 +1,144 @@
+
+		public static void buscar{
+			Object x;
+			int buscar_numero=Integer.parseInt(JOptionPane.showInputDialog("Ingrese valor a buscar: "));
+			VEDArbin<Object> nuevoNodo1 = new VEDArbin();
+			nuevoNodo1 = (VEDArbin<Object>) lista.get(buscarIndex(n));
+			
+			if(nuevoNodo1.busqueda(x)){
+            System.out.println("Valor encontrado");
+       			 }else{
+
+            System.out.println("Valor NO encontrado");
+       					 }
+		}
+		
+
+		
+		// TODO Auto-generated method stub
+		
+		//public VEDArbin(E pVal, VEDArbin<E> pIzq, VEDArbin<E> pDer) {
+	
+		/*
+		//Arbol vacio
+		VEDArbin<Integer> vacio=new VEDArbin<Integer>();
+
+		//Rama derecha
+		VEDArbin<Integer> trece=new VEDArbin<Integer>(20,vacio,vacio);
+		VEDArbin<Integer> doce=new VEDArbin<Integer>(17,vacio,vacio);
+		VEDArbin<Integer> once=new VEDArbin<Integer>(18,doce,trece);
+		VEDArbin<Integer> diez=new VEDArbin<Integer>(16,vacio,once);
+		VEDArbin<Integer> nueve=new VEDArbin<Integer>(12,vacio,vacio);//hoja
+		VEDArbin<Integer> tres=new VEDArbin<Integer>(15,nueve,diez);
+		
+		//Rama izquierda
+		VEDArbin<Integer> ocho=new VEDArbin<Integer>(7,vacio,vacio);//hoja
+		VEDArbin<Integer> siete=new VEDArbin<Integer>(8,ocho,vacio);
+		VEDArbin<Integer> seis=new VEDArbin<Integer>(5,vacio,vacio);//hoja
+		VEDArbin<Integer> cinco=new VEDArbin<Integer>(6,seis,siete);
+		VEDArbin<Integer> cuatro=new VEDArbin<Integer>(1,vacio,vacio);//hoja
+		VEDArbin<Integer> dos=new VEDArbin<Integer>(3,cuatro,cinco);
+		
+		//Raiz
+		VEDArbin<Integer> uno=new VEDArbin<Integer>(10,dos,tres);
+		/*
+		System.out.println(raiz.getVal());//Se imprime el valor del nodo 1 del arbol
+		System.out.println(izq.getVal());//Se imprime el valor del nodo 2 del arbol	
+		System.out.println(der.getVal());//Se imprime el valor del nodo 3 del arbol	
+		System.out.println(izq_izq.getVal());//Se imprime el valor del nodo 4 del arbol	
+		System.out.println(izq_der.getVal());//Se imprime el valor del nodo 5 del arbol	
+		System.out.println(izq_der_izq.getVal());//Se imprime el valor del nodo 6 del arbol
+		System.out.println(izq_der_der.getVal());//Se imprime el valor del nodo 7 del arbol
+		System.out.println(izq_der_der_izq.getVal());//Se imprime el valor del nodo 8 del arbol
+		System.out.println(der_izq.getVal());//Se imprime el valor del nodo 9 del arbol
+		System.out.println(der_der.getVal());//Se imprime el valor del nodo 10 del arbol
+		System.out.println(der_der_der.getVal());//Se imprime el valor del nodo 11 del arbol
+		System.out.println(der_der_der_izq.getVal());//Se imprime el valor del nodo 12 del arbol
+		System.out.println(der_der_der_der.getVal());//Se imprime el valor del nodo 13 del arbol
+		
+		*/
+		
+		/*
+		VEDArbin<Integer> vacio = new VEDArbin<Integer>();
+		//Rama derecha sub arbol derecha
+		VEDArbin<Integer> rama_der_der = new VEDArbin<Integer>(24,vacio,vacio);
+		//Rama derecha sub arbol izquierdo
+		VEDArbin<Integer> rama_der_izq_izq = new VEDArbin<Integer>(17,vacio,vacio);
+		VEDArbin<Integer> rama_der_izq = new VEDArbin<Integer>(18,rama_der_izq_izq,vacio);
+		//Subarbol derecho
+		VEDArbin<Integer> rama_der = new VEDArbin<Integer>(20,rama_der_izq,rama_der_der);
+		//Rama derecha sub arbol izquierdo
+		VEDArbin<Integer> rama_izq_der_der = new VEDArbin<Integer>(12,vacio,vacio);
+		VEDArbin<Integer> rama_izq_der_izq = new VEDArbin<Integer>(7,vacio,vacio);
+		VEDArbin<Integer> rama_izq_der = new VEDArbin<Integer>(9,rama_izq_der_izq,rama_izq_der_der);
+		//Rama izquierdo sub arbol izquierdo
+		VEDArbin<Integer> rama_izq_izq_der = new VEDArbin<Integer>(4,vacio,vacio);
+		
+		VEDArbin<Integer> rama_izq_izq_izq = new VEDArbin<Integer>(1,vacio,vacio);
+		VEDArbin<Integer> rama_izq_izq = new VEDArbin<Integer>(1,vacio,vacio);//hoja
+		//Subarbol izquierdo
+		VEDArbin<Integer> rama_izq = new VEDArbin<Integer>(3,rama_izq_izq,rama_izq_der);
+		//Raiz del Arbol
+		VEDArbin<Integer> raiz= new VEDArbin<Integer>(10,rama_izq,rama_der);*/
+		//System.out.println(raiz.getVal());//Se imprime el valor del nodo 1 del arbol
+		
+		//public VEDArbin(E pVal, VEDArbin<E> pIzq, VEDArbin<E> pDer) {
+
+		
+		System.out.println(raiz.getVal());//Se imprime el valor del nodo 1 del arbol
+		System.out.println(izq.getVal());//Se imprime el valor del nodo 2 del arbol	
+		System.out.println(der.getVal());//Se imprime el valor del nodo 3 del arbol	
+		System.out.println(izq_izq.getVal());//Se imprime el valor del nodo 4 del arbol	
+		System.out.println(izq_der.getVal());//Se imprime el valor del nodo 5 del arbol	
+		System.out.println(izq_der_izq.getVal());//Se imprime el valor del nodo 6 del arbol
+		System.out.println(izq_der_der.getVal());//Se imprime el valor del nodo 7 del arbol
+		System.out.println(izq_der_der_izq.getVal());//Se imprime el valor del nodo 8 del arbol
+		System.out.println(der_izq.getVal());//Se imprime el valor del nodo 9 del arbol
+		System.out.println(der_der.getVal());//Se imprime el valor del nodo 10 del arbol
+		System.out.println(der_der_der.getVal());//Se imprime el valor del nodo 11 del arbol
+		System.out.println(der_der_der_izq.getVal());//Se imprime el valor del nodo 12 del arbol
+		System.out.println(der_der_der_der.getVal());//Se imprime el valor del nodo 13 del arbol
+		
+		
+		/*
+		  public boolean Buscar(VEDArbin<Integer> node, Integer key) {
+		 */
+		
+		
+		VEDArrayList<Integer> listae = new VEDArrayList<Integer>();
+		int buscar_numero=Integer.parseInt(JOptionPane.showInputDialog("Ingrese valor a buscar: "));
+		VEDArbin<Integer> buscar = new VEDArbin<Integer>();//Creamos una copia de la clase VEDArbin
+		System.out.println(buscar.Buscar(raiz, buscar_numero));
+	
+		
+		//Crear copia de la clase VEDArbin en la variable vacio
+				//Rama derecha sub arbol derecha
+				VEDArbin<Integer> rama_der_der = new VEDArbin<Integer>(24,vacio,vacio);
+				//Rama derecha sub arbol izquierdo
+				VEDArbin<Integer> rama_der_izq_izq = new VEDArbin<Integer>(17,vacio,vacio);
+				VEDArbin<Integer> rama_der_izq = new VEDArbin<Integer>(18,rama_der_izq_izq,vacio);
+				//Subarbol derecho
+				VEDArbin<Integer> rama_der = new VEDArbin<Integer>(20,rama_der_izq,rama_der_der);
+				//Rama derecha sub arbol izquierdo
+				VEDArbin<Integer> rama_izq_der_der = new VEDArbin<Integer>(12,vacio,vacio);
+				VEDArbin<Integer> rama_izq_der_izq = new VEDArbin<Integer>(7,vacio,vacio);
+				VEDArbin<Integer> rama_izq_der = new VEDArbin<Integer>(9,rama_izq_der_izq,rama_izq_der_der);
+				//Rama izquierdo sub arbol izquierdo
+				VEDArbin<Integer> rama_izq_izq_der = new VEDArbin<Integer>(4,vacio,vacio);
+				VEDArbin<Integer> rama_izq_izq_izq = new VEDArbin<Integer>(1,vacio,vacio);
+				VEDArbin<Integer> rama_izq_izq = new VEDArbin<Integer>(3,rama_izq_izq_izq,rama_izq_izq_der);
+				//Subarbol izquierdo
+				VEDArbin<Integer> rama_izq = new VEDArbin<Integer>(6,rama_izq_izq,rama_izq_der);
+				//Raiz del Arbol
+				VEDArbin<Integer> raiz= new VEDArbin<Integer>(15,rama_izq,rama_der);
+		       
+				/*
+				//Crear copia de la clase VEDArrayList en la variable lista
+				VEDArrayList<Integer> lista = new VEDArrayList<Integer>();//Crear lista apartir de la clase VEDArrayList, se crea lista vacia
+				lista=raiz.preorden();//A la lista le cargamos el arbol
+				System.out.println("Imprimir Arbol en Preorden");
+				System.out.println("");
+				for(int i=0; i < lista.gettam(); i++) {
+					  System.out.println(lista.get(i));  //Imprimimos el arbol con el metodo preorden
+				  }
+		*/
