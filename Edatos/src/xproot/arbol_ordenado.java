@@ -1,5 +1,7 @@
 package xproot;
 
+import javax.swing.JOptionPane;
+
 public class arbol_ordenado {
 
 	public static void main(String[] args) {
@@ -74,6 +76,9 @@ public class arbol_ordenado {
 		for(int i=0;i<lista2.gettam();i++) {
 			System.out.println(lista2.get(i));
 		}
+		
+		int numero=Integer.parseInt(JOptionPane.showInputDialog("Ingresa valor: "));
+		System.out.println(arbol2.buscar_ordenado(arbol2, numero));
 	}
 
 }

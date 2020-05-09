@@ -131,6 +131,44 @@ public class VEDArbinOrdenado<E> extends VEDArbin<E> implements Set <E> {
 		}
 	}
 	
+	public boolean buscar_ordenado (VEDArbin<E> E, Integer element) {//raiz 30 elemento 20
+		  if (!esVacio()) {
+			  boolean b1=false,b2= false;
+	            if (getVal()==element) {
+	            	
+		            if(izq!=null){
+		                b1 =izq.buscar(izq, element);
+		                System.out.println("H");
+		            }
+		            if(der!=null){
+		                b2 = der.buscar(der, element);
+		                System.out.println("HH");
+		            }
+	            }
+	            
+	            /*
+	            if(b1||b2){
+	            	System.out.println("Numero encontrado "+ element);
+	            	//return true;
+	            }*/ 
+	        }
+	        return false;
+		   }
+	    	
+	/*
+	si 	 arbol diferente a vacio entonces
+			no haga nada
+			
+			sino
+				si izq == valor entonces
+					valor se encuentra en el arbol
+					sino
+						si der == valor entonces
+							valor se encuentra en el arbol
+				sino
+					 el valor no se encuentra en el arbol
+	
+	*/	
 	public Iterator<E> iterator() {
 		// TODO Auto-generated method stub
 		return null;
